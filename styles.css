@@ -1,7 +1,14 @@
-@media only screen and (min-widht: 320px) and 
-(max-widht: 1000px) {
-    body {
-        display: flex;
-        background-color: greenyellow;
-    }
-}
+header {
+  width: 100%;
+  background-color: white; }
+  header nav {
+    position: sticky;
+    display: flex;
+    justify-content: space-between; }
+    header nav #elementosLista {
+      color: black;
+      display: inline;
+      font-size: 28px;
+      font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif; }
+
+/*# sourceMappingURL=styles.css.map */
