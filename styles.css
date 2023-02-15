@@ -1,0 +1,7 @@
+@media only screen and (min-widht: 320px) and 
+(max-widht: 1000px) {
+    body {
+        display: flex;
+        background-color: greenyellow;
+    }
+}
