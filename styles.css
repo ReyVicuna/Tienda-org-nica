@@ -7,7 +7,7 @@ body main aside #offcanvasDark {
   -webkit-text-stroke: black 1.5px;
   font-size: 50px;
   font-family: "Caveat", cursive;
-  background-image: url(../imagenes/whiteWidow.webp);
+  background-image: url(../imagenes/navbarImagen.jpg);
   opacity: 0.5px; }
   body main aside #offcanvasDark .offcanvas-header .offcanvas-title {
     color: white;
