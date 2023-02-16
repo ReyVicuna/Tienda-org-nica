@@ -1,14 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Babylonica&family=Merriweather:ital@1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Zeyada&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Julee&display=swap");
+body main aside #offcanvasDark {
+  -webkit-text-stroke: black 1.5px;
+  font-size: 50px;
+  font-family: "Caveat", cursive;
+  background-image: url(../imagenes/whiteWidow.webp);
+  opacity: 0.5px; }
+  body main aside #offcanvasDark .offcanvas-header .offcanvas-title {
+    color: white;
+    font-size: 43px;
+    font-family: "Caveat", cursive; }
+
+main #contenedorProductos .card img {
+  height: 400px;
+  border-radius: 20%; }
+
+header nav .container-fluid .collapse .navbar-nav .nav-link {
+  -webkit-text-stroke: white 0.15px;
+  position: sticky;
+  color: black;
+  font-size: 50px; }
+
+body {
+  background-color: black; }
+
 header {
-  width: 100%;
-  background-color: white; }
+  position: sticky; }
   header nav {
-    position: sticky;
-    display: flex;
-    justify-content: space-between; }
-    header nav #elementosLista {
-      color: black;
-      display: inline;
-      font-size: 28px;
-      font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif; }
+    background-image: url(../cannabisMedicinal.png); }
+    header nav .container-fluid {
+      font-family: "Caveat", cursive;
+      font-size: 50px; }
+      header nav .container-fluid .navbar-brand {
+        text-decoration: overline;
+        text-transform: initial;
+        -webkit-text-stroke: rgba(248, 231, 231, 0.836) 1px;
+        color: silver;
+        font-size: 50px;
+        font-family: 'Babylonica', cursive; }
+
+main #contenedorProductos {
+  background-color: black;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  column-gap: 14px;
+  row-gap: 20px;
+  font-family: "Caveat", cursive;
+  font-size: 24px;
+  text-align: center;
+  width: 100%;
+  color: black; }
+  main #contenedorProductos .card {
+    background-color: black;
+    color: white; }
+    main #contenedorProductos .card .card-body {
+      background-image: url(../cannabisMedicinal.png);
+      border-radius: 5%;
+      border-color: white;
+      margin-top: 10px;
+      height: 275px; }
+      main #contenedorProductos .card .card-body .card-title {
+        font-family: "Caveat", cursive;
+        -webkit-text-stroke: rgba(0, 0, 0, 0.836) 0.75px;
+        color: silver;
+        text-align: center;
+        text-decoration: overline;
+        font-size: 42px; }
+
+main h1 {
+  text-decoration: underline;
+  -webkit-text-stroke: white 0.2px;
+  background-color: #364a03;
+  text-transform: inherit;
+  color: gold;
+  text-align: center;
+  font-family: "Babylonica", cursive;
+  font-size: 60px; }
 
 /*# sourceMappingURL=styles.css.map */

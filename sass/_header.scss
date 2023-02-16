@@ -1,0 +1,19 @@
+header {
+    position: sticky;
+    nav {
+        background-image: url(../cannabisMedicinal.png);
+        .container-fluid {
+            font-family: $tipografiaNavbar2;
+            font-size: 50px;
+
+            .navbar-brand {
+                text-decoration:overline;
+                text-transform:initial;
+                -webkit-text-stroke: rgba(248, 231, 231, 0.836) 1px;
+                color: silver;
+                font-size: 50px;
+                font-family: 'Babylonica', cursive;
+            }
+        }
+    }
+}

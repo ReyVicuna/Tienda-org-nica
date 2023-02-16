@@ -1,0 +1,21 @@
+body {
+    main {
+        aside {
+            #offcanvasDark {
+                -webkit-text-stroke: black 1.5px;
+                font-size: 50px;
+                font-family: $tipografiaNavbar2;
+                background-image: url(../imagenes/whiteWidow.webp);
+                opacity: 0.5px;
+
+                .offcanvas-header {
+                    .offcanvas-title {
+                        color: white;
+                        font-size: 43px;
+                        font-family: $tipografiaNavbar2;
+                    }
+                }
+            }
+        }
+    }
+}
