@@ -2,8 +2,9 @@ main {
     #contenedorProductos {
         .card {
             img {
-                height: 400px;
-                border-radius: 20%;
+                border-radius: 5%;
+                height: 245px;
+                fill-opacity: 120%;
             }
         }
     }
