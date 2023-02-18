@@ -1,9 +1,9 @@
-// Contedor de Productos
+//Declaraciones generales
+const contenedorProductos = document.getElementById("contenedorProductos");
+const contenedorContadorCarrito = document.getElementById ("contenedorContadorCarrito");
+const contador = document.createElement ("p");
 
-//Query selectors
-document.querySelector ("#carritoMostrar")
-document.querySelector ("#agregar")
-const contenedorProductos = document.getElementById("contenedorProductos")
+const carritoDeCompras = [];
 
 // baseProductos
 
@@ -20,10 +20,14 @@ const variedades = [
     { id: 10, nombre: "New: Royal Highness", imagen: "./Idproductos/royalHighness.webp", precio: 22, cantidad: 1, actualización: 1, Disponibilidad: 1 },
 ]
 
+
+
 //Repositorio de venta
 
 variedades.forEach(item => {
-    contenedorProductos.innerHTML +=
+    const div = document.createElement ("div");
+    div.innerHTML +=
+    
     `
     <div class="card mb-3">
         <img src="${item.imagen}" class="card-img-top" alt="${item.nombre}">
@@ -31,10 +35,42 @@ variedades.forEach(item => {
             <h2 class="card-title">${item.nombre}</h2>
             <p> Precio /gramo:  ${item.precio} ($)</p>
             <p> Disponibilidad:  ${item.Disponibilidad} (kg)</p>
-            <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
-            aria-controls="offcanvasRight"><a href=""><iconify-icon inline icon="ic:outline-add-shopping-cart" id="agregar" style="color: gold;" width="25" height="25"></iconify-icon></a></button>    
+            <button class="btn"><iconify-icon inline icon="ic:outline-add-shopping-cart" id="agregar${item.id}" style="color: gold;" width="25" height="25"></iconify-icon>Add gram</button>    
         </div>
     `
+    contenedorProductos.appendChild(div);
+
+    const botonAgregarCarrito = document.getElementById(`agregar${item.id}`);
+    botonAgregarCarrito.addEventListener ("click", ()=> {
+        agregarAlCarrito (item.id, carritoDeCompras);
+        agregarContadorCarrito ();
+        mostrarCarrito ();
+    })
 })
 
 
+const agregarAlCarrito = (productoSeleccionado, carrito)=> {
+    const productoExiste = carritoDeCompras.some (variedad => variedad.id === productoSeleccionado);
+    const productoElegido = variedades.find (variedad => variedad.id ===productoSeleccionado);
+    if (productoExiste) {
+        let precioInicial = productoElegido.precio;
+        productoElegido.cantidad++;
+        productoElegido.nuevoPrecio = productoElegido.cantidad * precioInicial;
+    } else {
+        carrito.push (productoElegido);
+        console.log ("Se agregó correctamente");
+        console.log (carrito);
+    }
+
+}
+
+const agregarContadorCarrito = ()=> {
+    if (carritoDeCompras.length  !== 0) {
+        contenedorContadorCarrito.appendChild (contador);
+        contador.textContent = carritoDeCompras.length;
+        contador.classList.add ("contadorCarrito");
+    } else {
+        contador.textContent ="";
+        contador.classList.remove ("contadorCarrito");
+    }
+}

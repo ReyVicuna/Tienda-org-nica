@@ -36,9 +36,10 @@
             </div>
         </nav>
         <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
-            aria-controls="offcanvasRight"><a href=""><iconify-icon
+            aria-controls="offcanvasRight" id="contenedorContadorCarrito"><a href=""><iconify-icon
                     icon="material-symbols:shopping-cart-checkout-outline-rounded" style="color: black" width="33"
-                    height="33"></iconify-icon></a></button>
+                    height="33"></iconify-icon></a> 
+                </button>
     </header>
     <main>
         <h1>" Cánnabis Organic Store "</h1>
@@ -50,9 +51,23 @@
                     <h5 class="offcanvas-title" id="offcanvasDarkLabel">Carrito de compras:</h5>
                 </div>
                 <div class="offcanvas-body">
-                    <p>Seleccionados...</p>
+                    <table class="w-100">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th class="tituloTabla" scope="col">Producto</th>
+                                <th class="tituloTabla" scope="col">Cantidad</th>
+                                <th class="tituloTabla" scope="col">Precio</th>
+                                <th class="tituloTabla" scope="col">X</th>
+                            </tr>
+                        </thead>
+                        <tbody id="carritoOffcanvas"></tbody>
+                    </table>
+                    <div class="mt-5 d-flex flex-column justify-content-center align-items-center">
+                        <p id="precioTotalCarrito">Precio Total: </p>
+                        <button id="terminarCompra" class="botonComprar">COMPRAR</button>
+                    </div>
                 </div>
-            </div>
         </aside>
         <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom"
             aria-controls="offcanvasBottom">¿Buscas mayoreo o asociarte con nosotros? Haz click aquí </button>
