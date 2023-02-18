@@ -1,9 +1,13 @@
 //Declaraciones generales
 const contenedorProductos = document.getElementById("contenedorProductos");
-const contenedorContadorCarrito = document.getElementById ("contenedorContadorCarrito");
-const contador = document.createElement ("p");
+const contadorCarrito = document.getElementById("contadorCarrito");
+const carritoOffcanvas = document.getElementById("carritoOffcanvas");
+const contenedorContadorCarrito = document.getElementById("contenedorContadorCarrito");
+const precioTotalCarrito = document.getElementById("precioTotalCarrito");
+const terminarCompra = document.getElementById("terminarCompra");
+const contador = document.createElement("p");
 
-const carritoDeCompras = [];
+
 
 // baseProductos
 
@@ -17,60 +21,105 @@ const variedades = [
     { id: 7, nombre: "Special: Purple Kush", imagen: "./Idproductos/purpleKush.webp", precio: 20, cantidad: 1, actualización: 9, Disponibilidad: 10 },
     { id: 8, nombre: "¡Offer!: Amnesia Haze", imagen: "./Idproductos/amnesiaHaze.jpg", precio: 22, cantidad: 1, actualización: 3, Disponibilidad: 5 },
     { id: 9, nombre: "New : Cookies Gelato", imagen: "./Idproductos/cookiesGelato.jpg", precio: 22, cantidad: 1, actualización: 7, Disponibilidad: 2 },
-    { id: 10, nombre: "New: Royal Highness", imagen: "./Idproductos/royalHighness.webp", precio: 22, cantidad: 1, actualización: 1, Disponibilidad: 1 },
+    { id: 10, nombre: "New: Royal Highness", imagen: "./Idproductos/royalHighness.webp", precio: 22, cantidad: 1, actualización: 1, Disponibilidad: 1 }
 ]
 
-
+const carritoDeCompras = [];
 
 //Repositorio de venta
 
 variedades.forEach(item => {
-    const div = document.createElement ("div");
+    const div = document.createElement("div");
     div.innerHTML +=
-    
-    `
+        `
     <div class="card mb-3">
         <img src="${item.imagen}" class="card-img-top" alt="${item.nombre}">
         <div class="card-body">
             <h2 class="card-title">${item.nombre}</h2>
             <p> Precio /gramo:  ${item.precio} ($)</p>
             <p> Disponibilidad:  ${item.Disponibilidad} (kg)</p>
-            <button class="btn"><iconify-icon inline icon="ic:outline-add-shopping-cart" id="agregar${item.id}" style="color: gold;" width="25" height="25"></iconify-icon>Add gram</button>    
+            <button id="variedades${item.id}" ><iconify-icon inline icon="ic:outline-add-shopping-cart"  style="color: gold;" width="25" height="25"></iconify-icon>Add</button>    
         </div>
     `
     contenedorProductos.appendChild(div);
 
-    const botonAgregarCarrito = document.getElementById(`agregar${item.id}`);
-    botonAgregarCarrito.addEventListener ("click", ()=> {
-        agregarAlCarrito (item.id, carritoDeCompras);
-        agregarContadorCarrito ();
-        mostrarCarrito ();
+    const botonAgregarCarrito = document.getElementById(`variedades${item.id}`);
+    botonAgregarCarrito.addEventListener("click", () => {
+        agregarAlCarrito(item.id, carritoDeCompras);
+        agregarContadorCarrito();
+        mostrarCarrito();
     })
 })
 
 
-const agregarAlCarrito = (productoSeleccionado, carrito)=> {
-    const productoExiste = carritoDeCompras.some (variedad => variedad.id === productoSeleccionado);
-    const productoElegido = variedades.find (variedad => variedad.id ===productoSeleccionado);
+const agregarAlCarrito = (productoSeleccionado, carrito) => {
+    const productoExiste = carritoDeCompras.some(variedad => variedad.id === productoSeleccionado);
+    const productoElegido = variedades.find(variedad => variedad.id === productoSeleccionado);
     if (productoExiste) {
         let precioInicial = productoElegido.precio;
         productoElegido.cantidad++;
         productoElegido.nuevoPrecio = productoElegido.cantidad * precioInicial;
     } else {
-        carrito.push (productoElegido);
-        console.log ("Se agregó correctamente");
-        console.log (carrito);
+        carrito.push(productoElegido);
+        console.log("Se agregó correctamente");
+        console.log(carrito);
     }
-
 }
 
-const agregarContadorCarrito = ()=> {
-    if (carritoDeCompras.length  !== 0) {
-        contenedorContadorCarrito.appendChild (contador);
+const agregarContadorCarrito = () => {
+    if (carritoDeCompras.length !== 0) {
+        contenedorContadorCarrito.appendChild(contador);
         contador.textContent = carritoDeCompras.length;
-        contador.classList.add ("contadorCarrito");
+        contador.classList.add("contadorCarrito");
     } else {
-        contador.textContent ="";
-        contador.classList.remove ("contadorCarrito");
+        contador.textContent = "";
+        contador.classList.remove("contadorCarrito");
     }
 }
+
+const mostrarCarrito = () => {
+    carritoOffcanvas.innerHTML = "";
+    carritoDeCompras.forEach(producto => {
+        tr = document.createElement("tr");
+        tr.classList.add("tablaProductos");
+        tr.innerHTML +=
+            `
+        <td>
+            <img src ="${producto.imagen}" alt="${producto.nombre}">
+        </td>
+            <td class="infoProducto">Tipo ${producto.nombre}</td>
+            <td class="infoProducto">${producto.cantidad}</td>
+            <td class="infoProducto">${producto.precio}</td>
+            <td class="infoProducto eliminarProducto">
+                <iconify-icon icon="material-symbols:delete-outline" class="deleteIconify" id="eliminar${producto.id}"></iconify-icon>
+        </td>
+        `
+        carritoOffcanvas.appendChild(tr)
+
+        const botonEliminar = document.getElementById(`eliminar${producto.id}`);
+        botonEliminar.addEventListener("click", () => {
+            eliminarProducto(producto.id)
+        })
+    })
+    const totalCarrito = carritoDeCompras.reduce((acumulador, producto) => acumulador + producto.precio, 0);
+    precioTotalCarrito.innerText = `Precio total: ${totalCarrito}`;
+}
+
+const eliminarProducto = (productoClickeado) => {
+    const productoEliminado = carritoDeCompras.find(variedad => variedad.id === productoClickeado);
+    const index = carritoDeCompras.indexOf(productoEliminado);
+    carritoDeCompras.splice(index, 1);
+    agregarContadorCarrito();
+    mostrarCarrito();
+}
+
+const vaciarCarrito = () => {
+    carritoDeCompras.innerHTML = [];
+    carritoOffcanvas.innerHTML = [];
+    contador.textContent = "";
+    contador.classList.remove("contadorCarrito");
+}
+
+terminarCompra.addEventListener("click", () => {
+    vaciarCarrito();
+})
