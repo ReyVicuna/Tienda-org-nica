@@ -1,0 +1,9 @@
+@mixin tamano ($ancho, $alto) {
+    width: $ancho;
+    height: $alto;
+}
+
+@mixin letras ($familia, $tamanoletra) {
+    font-family: $familia;
+    font-size: $tamanoletra;
+}

@@ -1,4 +1,8 @@
 @import "_variables";
+@import "_mixins.scss";
+@import "_bodyformulario";
+@import "_formulario";
+@import "_footer";
 @import "_offcanvas";
 @import "_imagenesContenedores";
 @import "_letrasNavbar";
@@ -8,3 +12,8 @@
 @import "_main";
 @import url('https://fonts.googleapis.com/css2?family=Zeyada&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Julee&display=swap');
+
+
+// media Query
+
+@import "mqContenedorProductos"

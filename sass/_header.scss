@@ -7,10 +7,10 @@ header {
             font-size: 50px;
 
             .navbar-brand {
-                text-decoration:overline;
+                text-decoration:underline;
                 text-transform:initial;
-                -webkit-text-stroke: rgba(248, 231, 231, 0.836) 1px;
-                color: silver;
+                -webkit-text-stroke: rgba(248, 231, 231, 0.836) 0.9px;
+                color: olive;
                 font-size: 50px;
                 font-family: 'Babylonica', cursive;
             }

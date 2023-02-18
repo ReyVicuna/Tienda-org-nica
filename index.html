@@ -15,12 +15,13 @@
 </head>
 
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <header class="d-flex">
+        <nav class="navbar w-100 navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
                 <a class="navbar-brand" href="./index.html">
-                    <iconify-icon icon="game-icons:lion" style="color: gold;" width="50" height="50"></iconify-icon>
-                    <em> LeónPlateado de Judá</em></a>
+                    <iconify-icon id="carritoMostrar" icon="game-icons:lion" style="color: gold;" width="50"
+                        height="50"></iconify-icon>
+                    <em> León deJudá</em></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -28,19 +29,19 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
-                        <a class="nav-link" href="#">¡Contáctanos! </a>
-                        <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
-                            aria-controls="offcanvasRight"><a href=""><iconify-icon
-                                    icon="material-symbols:shopping-cart-checkout-outline-rounded" style="color: black"
-                                    width="50" height="25"></iconify-icon></a></button>
+                        <a class="nav-link" href="#">¿Cómo llegar?</a>
                     </div>
                 </div>
             </div>
             </div>
         </nav>
+        <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+            aria-controls="offcanvasRight"><a href=""><iconify-icon
+                    icon="material-symbols:shopping-cart-checkout-outline-rounded" style="color: black" width="33"
+                    height="33"></iconify-icon></a></button>
     </header>
     <main>
-        <h1>" Cannabis Premium Store's "</h1>
+        <h1>" Cánnabis Organic Store "</h1>
         <section id="contenedorProductos"></section>
         <aside>
             <div class="offcanvas offcanvas-start show text-bg-dark" tabindex="-1" id="offcanvasDark"
@@ -54,16 +55,18 @@
             </div>
         </aside>
         <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom"
-            aria-controls="offcanvasBottom">Rellenar formulario</button>
+            aria-controls="offcanvasBottom">¿Buscas mayoreo o asociarte con nosotros? Haz click aquí </button>
         <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom"
             aria-labelledby="offcanvasBottomLabel">
             <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="offcanvasBottomLabel">Registro</h5>
+                <h5 class="offcanvas-title" id="offcanvasBottomLabel">
+                    <em>"Nota al usuario: Todos tus datos serán protegidos via encriptamiento"</em>
+                </h5>
                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             <div class="offcanvas-body small">
                 <section id="secciónPrimerContacto">
-                    <h3>¡Favor de llenar con la mayor veracidad posible!</h3>
+                    <h3>¡Gracias por tu visita! Nos comunicamaremos lo más pronto posible</h3>
                     <form>
                         <input type="text" name="" id="" required placeholder="Nombre (s) de quien solicita"
                             class="primerFormulario">
@@ -108,7 +111,6 @@
                 </section>
             </div>
         </div>
-
     </main>
     <footer>Todos los derechos reservados por el autor ©</footer>
     <script src="https://code.iconify.design/iconify-icon/1.0.5/iconify-icon.min.js"></script>
