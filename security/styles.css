@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Babylonica&family=Merriweather:ital@1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Zeyada&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Julee&display=swap");
+header {
+  padding: 0rem 1rem; }
+
+main aside .offcanvas .offcanvas-body {
+  font-family: "Caveat", cursive;
+  font-size: 30px;
+  text-transform: inherit; }
+
+body main .offcanvas {
+  font-size: 22px;
+  font-family: "Merriweather", serif;
+  background-image: url(../imagenes/brujo.jpg);
+  color: white; }
+
+body main .btn {
+  font-size: 15px;
+  font-family: "Merriweather", serif;
+  background-color: black;
+  color: white; }
+
+body footer {
+  font-family: "Merriweather", serif;
+  text-align: center;
+  background-color: black; }
+
+body main aside #offcanvasDark {
+  font-size: 50px;
+  font-family: "Caveat", cursive;
+  background-image: url(../imagenes/navbarImagen.jpg);
+  opacity: 0.5px; }
+  body main aside #offcanvasDark .offcanvas-header .offcanvas-title {
+    color: white;
+    font-size: 43px;
+    font-family: "Caveat", cursive; }
+
+main #contenedorProductos .card img {
+  border-radius: 5%;
+  height: 245px;
+  fill-opacity: 120%; }
+
+header nav .container-fluid .collapse .navbar-nav .nav-link {
+  -webkit-text-stroke: white 0.25px;
+  position: sticky;
+  color: black;
+  font-size: 55px;
+  text-align: center; }
+
+body {
+  background-image: url(../cannabisMedicinal.png);
+  background-color: black; }
+
+header {
+  position: sticky; }
+  header nav {
+    background-image: url(../cannabisMedicinal.png); }
+    header nav .container-fluid {
+      font-family: "Caveat", cursive;
+      font-size: 50px; }
+      header nav .container-fluid .navbar-brand {
+        text-decoration: underline;
+        text-transform: initial;
+        -webkit-text-stroke: rgba(248, 231, 231, 0.836) 0.9px;
+        color: olive;
+        font-size: 50px;
+        font-family: 'Babylonica', cursive; }
+
+main #contenedorProductos {
+  padding: 15px;
+  background-color: black;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  column-gap: 15px;
+  row-gap: 0px;
+  font-family: "Caveat", cursive;
+  font-size: 24px;
+  text-align: center;
+  width: 100%; }
+  main #contenedorProductos .card {
+    text-decoration: overline;
+    display: flexbox;
+    border-radius: 10%;
+    background-image: url(../imagenes/alien.jpg);
+    background-color: #A53889;
+    -webkit-text-stroke: black 0.2px;
+    color: white; }
+    main #contenedorProductos .card .card-body {
+      border-radius: 10%;
+      border-color: white;
+      margin-top: 10px;
+      height: 275px; }
+      main #contenedorProductos .card .card-body .card-title {
+        text-transform: uppercase;
+        font-family: "Caveat", cursive;
+        font-size: 35px;
+        -webkit-text-stroke: rgba(0, 0, 0, 0.836) 0.75px;
+        color: white;
+        text-align: center; }
+
+main h1 {
+  text-decoration: underline;
+  -webkit-text-stroke: white 0.2px;
+  background-color: BLACK;
+  text-transform: inherit;
+  color: gold;
+  text-align: center;
+  font-family: "Babylonica", cursive;
+  font-size: 60px; }
+
+@media only screen and (max-width: 600px) {
+  main #contenedorProductos {
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    padding: 20px;
+    font-size: 22px; }
+    main #contenedorProductos .card .card-body .card-title {
+      text-transform: uppercase;
+      font-size: 24px;
+      text-decoration: underline; } }
+
+/*# sourceMappingURL=styles.css.map */
