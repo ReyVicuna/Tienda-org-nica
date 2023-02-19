@@ -38,9 +38,10 @@ variedades.forEach(item => {
             <h2 class="card-title">${item.nombre}</h2>
             <p> Precio /gramo:  ${item.precio} ($)</p>
             <p> Disponibilidad:  ${item.Disponibilidad} (kg)</p>
-            <button id="variedades${item.id}" ><iconify-icon inline icon="ic:outline-add-shopping-cart"  style="color: gold;" width="25" height="25"></iconify-icon>Add</button>    
+            <button id="variedades${item.id}" type="button" class="btn btn-dark" ><iconify-icon inline icon="ic:outline-add-shopping-cart"  style="color: gold;" width="25" height="25"></iconify-icon>Add</button>    
         </div>
     `
+
     contenedorProductos.appendChild(div);
 
     const botonAgregarCarrito = document.getElementById(`variedades${item.id}`);
