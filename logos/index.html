@@ -35,22 +35,21 @@
             </div>
         </nav>
         <div class="d-flex align-items-center" id="contenedorContadorCarrito">
-            <div id="contadorCarrito">
-                <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><iconify-icon inline icon="ic:twotone-shopping-cart-checkout" style="color: white;" width="30" height="30"></iconify-icon></button>
-
-            </div>
+            <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                aria-controls="offcanvasRight" id="contadorCarrito">
+                <iconify-icon icon="material-symbols:shopping-cart-checkout-outline-rounded" style="color: white"
+                    width="33" height="33" ></iconify-icon>
+            </button>
         </div>
     </header>
     <main>
         <h1>" Cánnabis Organic Store "</h1>
         <section id="contenedorProductos"></section>
         <aside>
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
-                aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas offcanvas-start show text-bg-dark" tabindex="-1" id="offcanvasDark"
+                aria-labelledby="offcanvasDarkLabel">
                 <div class="offcanvas-header">
                     <h5 class="offcanvas-title" id="offcanvasDarkLabel">Carrito de compras:</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body">
                     <table class="w-100">

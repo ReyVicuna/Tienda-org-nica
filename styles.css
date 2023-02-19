@@ -3,6 +3,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Zeyada&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Julee&display=swap");
+header {
+  padding: 0rem 1rem; }
+
 main aside .offcanvas .offcanvas-body {
   font-family: "Caveat", cursive;
   font-size: 30px;
@@ -48,8 +51,8 @@ header nav .container-fluid .collapse .navbar-nav .nav-link {
   text-align: center; }
 
 body {
-  color: white;
-  background-image: url(../cannabisMedicinal.png); }
+  background-image: url(../cannabisMedicinal.png);
+  background-color: black; }
 
 header {
   position: sticky; }

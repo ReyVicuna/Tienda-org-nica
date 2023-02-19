@@ -22,7 +22,7 @@ const variedades = [
     { id: 8, nombre: "¡Offer!: Amnesia Haze", imagen: "./Idproductos/amnesiaHaze.jpg", precio: 22, cantidad: 1, actualización: 3, Disponibilidad: 5 },
     { id: 9, nombre: "New : Cookies Gelato", imagen: "./Idproductos/cookiesGelato.jpg", precio: 22, cantidad: 1, actualización: 7, Disponibilidad: 2 },
     { id: 10, nombre: "New: Royal Highness", imagen: "./Idproductos/royalHighness.webp", precio: 22, cantidad: 1, actualización: 1, Disponibilidad: 1 }
-]
+];
 
 const carritoDeCompras = [];
 
@@ -67,7 +67,7 @@ const agregarAlCarrito = (productoSeleccionado, carrito) => {
 }
 
 const agregarContadorCarrito = () => {
-    if (carritoDeCompras.length !== 0) {
+    if (typeof foo !== 'undefinided') {
         contenedorContadorCarrito.appendChild(contador);
         contador.textContent = carritoDeCompras.length;
         contador.classList.add("contadorCarrito");
