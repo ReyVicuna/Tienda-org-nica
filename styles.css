@@ -105,6 +105,7 @@ header {
         font-family: 'Babylonica', cursive; }
 
 main #contenedorProductos {
+  background: radial-gradient(ellipse, #b0aeee 0%, #1d1e1f);
   padding: 15px;
   background-color: black;
   display: grid;
