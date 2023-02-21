@@ -17,7 +17,9 @@ aside {
                             }
                         }
                         .infoProducto {
-                            font-size: 24px;
+                            -webkit-text-stroke: black 0.75px;
+                            color: wheat;
+                            font-size: 30px;
                             text-align: center;
                         }
                         .eliminarProducto {

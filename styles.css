@@ -12,7 +12,9 @@ aside div div table #carritoOffcanvas .tablaProductos {
     aside div div table #carritoOffcanvas .tablaProductos td img {
       width: 85%; }
   aside div div table #carritoOffcanvas .tablaProductos .infoProducto {
-    font-size: 24px;
+    -webkit-text-stroke: black 0.75px;
+    color: wheat;
+    font-size: 30px;
     text-align: center; }
   aside div div table #carritoOffcanvas .tablaProductos .eliminarProducto {
     font-size: 22px;
@@ -56,16 +58,20 @@ body footer {
 
 body main aside #offcanvasRight {
   font-size: 50px;
-  font-family: "Caveat", cursive;
+  font-family: "Merriweather", serif;
   background-image: url(../imagenes/navbarImagen.jpg);
-  opacity: 0.5px; }
+  opacity: 0.25px; }
+  body main aside #offcanvasRight #precioTotalCarrito {
+    font-family: "Caveat", cursive;
+    background-color: black;
+    color: wheat;
+    border-radius: 10%; }
   body main aside #offcanvasRight .offcanvas-body {
     font-size: 25px; }
   body main aside #offcanvasRight .offcanvas-header .offcanvas-title {
-    -webkit-text-stroke: black 1px;
-    color: white;
-    font-size: 43px;
-    font-family: "Caveat", cursive; }
+    color: wheat;
+    font-size: 50px;
+    font-family: "Babylonica", cursive; }
 
 main #contenedorProductos .card img {
   border-radius: 5%;

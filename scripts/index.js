@@ -12,16 +12,16 @@ const contador = document.createElement("p");
 // baseProductos
 
 const variedades = [
-    { id: 1, nombre: "Blacberry Moonroocks", imagen: "./Idproductos/blackberryMoonrocks.jpg", precio: 30, cantidad: 1, actualización: 2, Disponibilidad: 10 },
-    { id: 2, nombre: "Most Sale: Bubba Kush", imagen: "./Idproductos/bubbaKush.jpg", precio: 42, cantidad: 1, actualización: 4, Disponibilidad: 22 },
-    { id: 3, nombre: "More THC: Critical ++ 2.0", imagen: "./Idproductos/criticalMasMas.jpg", precio: 28, cantidad: 1, actualización: 5, Disponibilidad: 40 },
-    { id: 4, nombre: "Mex: Golden Acapulco", imagen: "./Idproductos/goldenAcapulco.jpg", precio: 42, cantidad: 1, actualización: 6, Disponibilidad: 38 },
-    { id: 5, nombre: "Northern Lights", imagen: "./Idproductos/northernLights.jpg", precio: 32, cantidad: 1, actualización: 7, Disponibilidad: 29 },
-    { id: 6, nombre: "Gorilla Breath", imagen: "./Idproductos/gorillaBreath.jpg", precio: 24, cantidad: 1, actualización: 9, Disponibilidad: 51 },
-    { id: 7, nombre: "Special: Purple Kush", imagen: "./Idproductos/purpleKush.webp", precio: 20, cantidad: 1, actualización: 9, Disponibilidad: 10 },
-    { id: 8, nombre: "¡Offer!: Amnesia Haze", imagen: "./Idproductos/amnesiaHaze.jpg", precio: 22, cantidad: 1, actualización: 3, Disponibilidad: 5 },
-    { id: 9, nombre: "New : Cookies Gelato", imagen: "./Idproductos/cookiesGelato.jpg", precio: 22, cantidad: 1, actualización: 7, Disponibilidad: 2 },
-    { id: 10, nombre: "New: Royal Highness", imagen: "./Idproductos/royalHighness.webp", precio: 22, cantidad: 1, actualización: 1, Disponibilidad: 1 }
+    { id: 1, nombre: "Blacberry Moonroocks", imagen: "./Idproductos/blackberryMoonrocks.jpg", precio: 30, cantidad: 1, Disponibilidad: 10 },
+    { id: 2, nombre: "New!: Bubba Kush", imagen: "./Idproductos/bubbaKush.jpg", precio: 42, cantidad: 1, Disponibilidad: 22 },
+    { id: 3, nombre: "EXTRA THC: Critical ++ 2.0", imagen: "./Idproductos/criticalMasMas.jpg", precio: 28, cantidad: 1, Disponibilidad: 40 },
+    { id: 4, nombre: "Golden Acapulco", imagen: "./Idproductos/goldenAcapulco.jpg", precio: 42, cantidad: 1, Disponibilidad: 38 },
+    { id: 5, nombre: "Northern Lights", imagen: "./Idproductos/northernLights.jpg", precio: 32, cantidad: 1, Disponibilidad: 29 },
+    { id: 6, nombre: "Special: Alien OG", imagen: "./Idproductos/alienOg.jpg", precio: 24, cantidad: 1, Disponibilidad: 51 },
+    { id: 7, nombre: "Medicinal: Purple Kush", imagen: "./Idproductos/purpleKush.webp", precio: 20, cantidad: 1, Disponibilidad: 10 },
+    { id: 8, nombre: "Offsale!: Amnesia Haze", imagen: "./Idproductos/amnesiaHaze.jpg", precio: 22, cantidad: 1, Disponibilidad: 5 },
+    { id: 9, nombre: "Cookies Gelato", imagen: "./Idproductos/cookiesGelato.jpg", precio: 22, cantidad: 1, Disponibilidad: 2 },
+    { id: 10, nombre: "Royal Highness", imagen: "./Idproductos/royalHighness.webp", precio: 22, cantidad: 1, Disponibilidad: 1 }
 ];
 
 let carritoDeCompras = [];
@@ -88,7 +88,7 @@ const mostrarCarrito = () => {
         <td>
             <img src ="${producto.imagen}" alt="${producto.nombre}">
         </td>
-            <td class="infoProducto">Tipo ${producto.nombre}</td>
+            <td class="infoProducto">${producto.nombre}</td>
             <td class="infoProducto">${producto.cantidad}</td>
             <td class="infoProducto">${producto.precio}</td>
             <td class="infoProducto eliminarProducto">

@@ -3,9 +3,16 @@ body {
         aside {
             #offcanvasRight {
                 font-size: 50px;
-                font-family: $tipografiaNavbar2;
+                font-family: $tipografiaProductos;
                 background-image: url(../imagenes/navbarImagen.jpg);
-                opacity: 0.5px;
+                opacity: 0.25px;
+
+                #precioTotalCarrito {
+                    font-family: $tipografiaNavbar2;
+                    background-color: black;
+                    color: wheat;
+                    border-radius: 10%;
+                }
 
                 .offcanvas-body {
                     font-size: 25px;
@@ -14,10 +21,9 @@ body {
 
                 .offcanvas-header {
                     .offcanvas-title {
-                        -webkit-text-stroke: black 1px;
-                        color: white;
-                        font-size: 43px;
-                        font-family: $tipografiaNavbar2;
+                        color: wheat;
+                        font-size: 50px;
+                        font-family: $tipografiaNavbar1;
                     }
                 }
             }
