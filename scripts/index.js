@@ -54,7 +54,7 @@ variedades.forEach(item => {
 
 
 const agregarAlCarrito = (productoSeleccionado, carrito) => {
-    const productoExiste = carritoDeCompras.some(variedad => variedad.id === productoSeleccionado);
+    const productoExiste = carritoDeCompras.some (camiseta => camiseta.id === productoSeleccionado);
     const productoElegido = variedades.find(variedad => variedad.id === productoSeleccionado);
     if (productoExiste) {
         let precioInicial = productoElegido.precio;
@@ -68,7 +68,7 @@ const agregarAlCarrito = (productoSeleccionado, carrito) => {
 }
 
 const agregarContadorCarrito = () => {
-    if (typeof foo !== 'undefinided') {
+    if (carritoDeCompras.length !== 0) {
         contenedorContadorCarrito.appendChild(contador);
         contador.textContent = carritoDeCompras.length;
         contador.classList.add("contadorCarrito");
@@ -104,7 +104,7 @@ const mostrarCarrito = () => {
     })
     
     const totalCarrito = carritoDeCompras.reduce((acumulador, producto) => acumulador + producto.precio * producto.cantidad, 0);
-    precioTotalCarrito.innerText = `Precio total: ${totalCarrito}`;
+    precioTotalCarrito.innerText = `$ (MXN): ${totalCarrito}`;
 }
 
 const eliminarProducto = (productoClickeado) => {
