@@ -3,8 +3,33 @@
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Zeyada&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Julee&display=swap");
-header {
-  padding: 0rem 1rem; }
+aside div div table thead .tituloTabla {
+  text-align: center; }
+aside div div table #carritoOffcanvas .tablaProductos {
+  height: 5rem; }
+  aside div div table #carritoOffcanvas .tablaProductos td {
+    width: 200px; }
+    aside div div table #carritoOffcanvas .tablaProductos td img {
+      width: 85%; }
+  aside div div table #carritoOffcanvas .tablaProductos .infoProducto {
+    font-size: 15px;
+    text-align: center; }
+  aside div div table #carritoOffcanvas .tablaProductos .eliminarProducto {
+    font-size: 22px;
+    color: red;
+    height: 10px; }
+    aside div div table #carritoOffcanvas .tablaProductos .eliminarProducto .deleteIconify {
+      border: 1px solid red;
+      cursor: pointer; }
+aside div .botonComprar {
+  background-color: green;
+  padding: 0.8rem 2rem;
+  border-radius: 4px;
+  border: none;
+  width: fit-content;
+  color: white; }
+  aside div .botonComprar:hover {
+    background-color: #d64b3c; }
 
 main aside .offcanvas .offcanvas-body {
   font-family: "Caveat", cursive;
