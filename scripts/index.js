@@ -24,7 +24,7 @@ const variedades = [
     { id: 10, nombre: "New: Royal Highness", imagen: "./Idproductos/royalHighness.webp", precio: 22, cantidad: 1, actualización: 1, Disponibilidad: 1 }
 ];
 
-const carritoDeCompras = [];
+let carritoDeCompras = [];
 
 //Repositorio de venta
 
@@ -102,7 +102,8 @@ const mostrarCarrito = () => {
             eliminarProducto(producto.id)
         })
     })
-    const totalCarrito = carritoDeCompras.reduce((acumulador, producto) => acumulador + producto.precio, 0);
+    
+    const totalCarrito = carritoDeCompras.reduce((acumulador, producto) => acumulador + producto.precio * producto.cantidad, 0);
     precioTotalCarrito.innerText = `Precio total: ${totalCarrito}`;
 }
 
@@ -117,6 +118,7 @@ const eliminarProducto = (productoClickeado) => {
 const vaciarCarrito = () => {
     carritoDeCompras.innerHTML = [];
     carritoOffcanvas.innerHTML = [];
+    precioTotalCarrito.textContent = "";
     contador.textContent = "";
     contador.classList.remove("contadorCarrito");
 }

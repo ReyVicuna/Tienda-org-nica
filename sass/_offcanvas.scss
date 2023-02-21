@@ -1,14 +1,20 @@
 body {
     main {
         aside {
-            #offcanvasDark {
+            #offcanvasRight {
                 font-size: 50px;
                 font-family: $tipografiaNavbar2;
                 background-image: url(../imagenes/navbarImagen.jpg);
                 opacity: 0.5px;
 
+                .offcanvas-body {
+                    font-size: 25px;
+                    
+                }
+
                 .offcanvas-header {
                     .offcanvas-title {
+                        -webkit-text-stroke: black 1px;
                         color: white;
                         font-size: 43px;
                         font-family: $tipografiaNavbar2;

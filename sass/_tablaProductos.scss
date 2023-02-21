@@ -17,7 +17,7 @@ aside {
                             }
                         }
                         .infoProducto {
-                            font-size: 15px;
+                            font-size: 24px;
                             text-align: center;
                         }
                         .eliminarProducto {
@@ -26,7 +26,7 @@ aside {
                             height: 10px;
                             .deleteIconify{
                                 border: 1px solid red;
-                                cursor: pointer;
+                                cursor: grab;
                             }
                         }
                     }
@@ -34,14 +34,15 @@ aside {
             }
         }
         .botonComprar {
-            background-color: green;
+            background-color:  rgb(161, 35, 161);
             padding: 0.8rem 2rem;
             border-radius: 4px;
             border: none;
             width:fit-content;
             color: white;
             &:hover{
-                background-color: #d64b3c;
+                font-size: 27px;
+                background-color: blueviolet;
             }
         }
     }
