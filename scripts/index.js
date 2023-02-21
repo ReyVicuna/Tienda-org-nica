@@ -54,7 +54,7 @@ variedades.forEach(item => {
 
 
 const agregarAlCarrito = (productoSeleccionado, carrito) => {
-    const productoExiste = carritoDeCompras.some (camiseta => camiseta.id === productoSeleccionado);
+    const productoExiste = carritoDeCompras.some(camiseta => camiseta.id === productoSeleccionado);
     const productoElegido = variedades.find(variedad => variedad.id === productoSeleccionado);
     if (productoExiste) {
         let precioInicial = productoElegido.precio;
@@ -102,7 +102,7 @@ const mostrarCarrito = () => {
             eliminarProducto(producto.id)
         })
     })
-    
+
     const totalCarrito = carritoDeCompras.reduce((acumulador, producto) => acumulador + producto.precio * producto.cantidad, 0);
     precioTotalCarrito.innerText = `$ (MXN): ${totalCarrito}`;
 }
