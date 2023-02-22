@@ -1,10 +1,13 @@
 main {
     h1 {
-        background: linear-gradient(to right,gold,10%,black);
+        border-radius: 2%;
+        margin: 3px;
+        backdrop-filter: blur(10px);
+        background-color: rgba(0, 0, 0, 0.75);
         text-decoration: underline;
         -webkit-text-stroke: white 0.2px;
         text-transform: inherit;
-        color: gold;
+        color: wheat;
         text-align: center;
         font-family: $tipografiaNavbar1;
         font-size: 60px;

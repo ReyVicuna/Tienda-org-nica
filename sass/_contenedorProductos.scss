@@ -1,5 +1,10 @@
 main {
     #contenedorProductos {
+        margin: 3px;
+        margin-block: 5px;
+        border-radius: 1%;
+        backdrop-filter: blur(10px);
+        background-color: rgba(0, 0, 0, 0.42);
         padding: 15px;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;

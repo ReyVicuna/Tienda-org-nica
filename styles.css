@@ -86,8 +86,11 @@ header nav .container-fluid .collapse .navbar-nav .nav-link {
   text-align: center; }
 
 body {
-  background-image: url(../cannabisMedicinal.png);
-  background-size: cover; }
+  background-image: url(./cannabisMedicinal.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed; }
 
 header nav {
   position: sticky; }
@@ -98,11 +101,16 @@ header nav {
       -webkit-text-stroke: black 0.55px;
       text-decoration: underline;
       text-transform: initial;
-      color: gold;
+      color: wheat;
       font-size: 72px;
       font-family: 'Babylonica', cursive; }
 
 main #contenedorProductos {
+  margin: 3px;
+  margin-block: 5px;
+  border-radius: 1%;
+  backdrop-filter: blur(10px);
+  background-color: rgba(0, 0, 0, 0.42);
   padding: 15px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -135,11 +143,14 @@ main #contenedorProductos {
         text-align: center; }
 
 main h1 {
-  background: linear-gradient(to right, gold, 10%, black);
+  border-radius: 2%;
+  margin: 3px;
+  backdrop-filter: blur(10px);
+  background-color: rgba(0, 0, 0, 0.75);
   text-decoration: underline;
   -webkit-text-stroke: white 0.2px;
   text-transform: inherit;
-  color: gold;
+  color: wheat;
   text-align: center;
   font-family: "Babylonica", cursive;
   font-size: 60px; }
