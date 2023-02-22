@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Babylonica&family=Merriweather:ital@1&display=swap");
 
+body {
+  background-image: url(./cannabisMedicinal.png);
+  background-size: cover;
+}
+
 header nav .container-fluid .navbar-brand {
   text-decoration: underline;
   text-transform: initial;
@@ -8,9 +13,6 @@ header nav .container-fluid .navbar-brand {
   font-family: "Babylonica", cursive;
 }
 
-body {
-  background-image: url(./imagenes/hojasCannabis.png);
-}
 
 .login-box {
   position: absolute;

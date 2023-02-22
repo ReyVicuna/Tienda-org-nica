@@ -86,8 +86,8 @@ header nav .container-fluid .collapse .navbar-nav .nav-link {
   text-align: center; }
 
 body {
-  background-image: url(../imagenes/hojasCannabis.png);
-  background-color: white; }
+  background-image: url(../cannabisMedicinal.png);
+  background-size: cover; }
 
 header nav {
   position: sticky; }
