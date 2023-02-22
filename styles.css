@@ -79,35 +79,31 @@ main #contenedorProductos .card img {
   fill-opacity: 120%; }
 
 header nav .container-fluid .collapse .navbar-nav .nav-link {
-  -webkit-text-stroke: white 0.25px;
+  -webkit-text-stroke: black 0.80px;
   position: sticky;
-  color: black;
+  color: white;
   font-size: 55px;
   text-align: center; }
 
 body {
-  background-image: url(../cannabisMedicinal.png);
-  background-color: black; }
+  background-image: url(../imagenes/hojasCannabis.png);
+  background-color: white; }
 
-header {
+header nav {
   position: sticky; }
-  header nav {
-    background-image: url(../cannabisMedicinal.png); }
-    header nav .container-fluid {
-      font-family: "Caveat", cursive;
-      font-size: 50px; }
-      header nav .container-fluid .navbar-brand {
-        text-decoration: underline;
-        text-transform: initial;
-        -webkit-text-stroke: rgba(248, 231, 231, 0.836) 0.9px;
-        color: olive;
-        font-size: 50px;
-        font-family: 'Babylonica', cursive; }
+  header nav .container-fluid {
+    font-family: "Caveat", cursive;
+    font-size: 50px; }
+    header nav .container-fluid .navbar-brand {
+      -webkit-text-stroke: black 0.55px;
+      text-decoration: underline;
+      text-transform: initial;
+      color: gold;
+      font-size: 72px;
+      font-family: 'Babylonica', cursive; }
 
 main #contenedorProductos {
-  background: radial-gradient(ellipse, #b0aeee 0%, #1d1e1f);
   padding: 15px;
-  background-color: black;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
@@ -139,9 +135,9 @@ main #contenedorProductos {
         text-align: center; }
 
 main h1 {
+  background: linear-gradient(to right, gold, 10%, black);
   text-decoration: underline;
   -webkit-text-stroke: white 0.2px;
-  background-color: BLACK;
   text-transform: inherit;
   color: gold;
   text-align: center;

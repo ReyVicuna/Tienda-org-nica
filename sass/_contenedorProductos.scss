@@ -1,8 +1,6 @@
 main {
     #contenedorProductos {
-        background: radial-gradient(ellipse, rgba(176,174,238,1) 0%, rgba(29,30,31,1));
         padding: 15px;
-        background-color: black;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr;
@@ -12,6 +10,7 @@ main {
         font-size: 24px;
         text-align: center;
         width: 100%;
+
         .card {
             text-decoration: overline;
             display: flexbox;
@@ -20,11 +19,13 @@ main {
             background-color: #A53889;
             -webkit-text-stroke: black 0.2px;
             color: white;
+
             .card-body {
                 border-radius: 10%;
                 border-color: white;
                 margin-top: 10px;
                 height: 275px;
+
                 .card-title {
                     text-transform: uppercase;
                     @include letras ($tipografiaNavbar2, 35px);

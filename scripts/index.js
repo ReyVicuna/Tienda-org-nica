@@ -24,7 +24,7 @@ const variedades = [
     { id: 10, nombre: "Royal Highness", imagen: "./Idproductos/royalHighness.webp", precio: 22, cantidad: 1, Disponibilidad: 1 }
 ];
 
-let carritoDeCompras = [];
+const carritoDeCompras = [];
 
 //Repositorio de venta
 
@@ -125,4 +125,5 @@ const vaciarCarrito = () => {
 
 terminarCompra.addEventListener("click", () => {
     vaciarCarrito();
+    contador();
 })
