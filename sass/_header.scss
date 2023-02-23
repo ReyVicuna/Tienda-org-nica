@@ -1,18 +1,10 @@
 header {
-    nav {
-        position: sticky;
-        .container-fluid {
-            font-family: $tipografiaNavbar2;
-            font-size: 42px;
-
-            .navbar-brand {
-                -webkit-text-stroke: black 0.55px;
-                text-decoration:underline;
-                text-transform:initial;
-                color:wheat;
-                font-size: 72px;
-                font-family: 'Babylonica', cursive;
-            }
-        }
-    }
+    display: flex;    
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    align-items: center;
+    height: 55px;
+    background-color: rgba(0, 0, 0, 0.25);
 }

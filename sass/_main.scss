@@ -1,13 +1,11 @@
 main {
     h1 {
-        border-radius: 2%;
-        margin: 3px;
         backdrop-filter: blur(10px);
-        background-color: rgba(0, 0, 0, 0.75);
+        background-color: rgba(0, 0, 0, 0.1);
         text-decoration: underline;
-        -webkit-text-stroke: white 0.2px;
+        -webkit-text-stroke: black 0.25px;
         text-transform: inherit;
-        color: wheat;
+        color: rgba(255, 255, 255, 0.98);
         text-align: center;
         font-family: $tipografiaNavbar1;
         font-size: 60px;

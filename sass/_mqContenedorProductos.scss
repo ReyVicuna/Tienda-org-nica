@@ -1,10 +1,19 @@
 @media only screen and (max-width: 600px) {
     main {
+        display: inline-block;
+        text-align: center;
+
+        h1 {
+            margin: 40px;
+        }
+
+
         #contenedorProductos {
             grid-template-columns: 1fr 1fr;
             gap: 15px;
             padding: 20px;
             font-size: 22px;
+
             .card {
                 .card-body {
                     .card-title {
@@ -16,5 +25,4 @@
             }
         }
     }
-
 }

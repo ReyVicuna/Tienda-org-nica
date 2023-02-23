@@ -1,50 +1,47 @@
-main {
-    #contenedorProductos {
-        margin: 3px;
-        margin-block: 5px;
-        border-radius: 1%;
-        backdrop-filter: blur(10px);
-        background-color: rgba(0, 0, 0, 0.42);
-        padding: 15px;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        column-gap: 15px;
-        row-gap: 0px;
-        font-family: $tipografiaNavbar2;
-        font-size: 24px;
-        text-align: center;
-        width: 100%;
+#contenedorProductos {
+    margin: 5px;
+    margin-block: 5px;
+    border-radius: 1%;
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 15px;
+    row-gap: 0px;
+    font-family: $tipografiaNavbar2;
+    font-size: 24px;
+    text-align: center;
+    width: 100%;
 
-        .card {
-            text-decoration: overline;
-            display: flexbox;
+    .card {
+        text-decoration: overline;
+        display: flexbox;
+        border-radius: 10%;
+        background-image: url(../imagenes/alien.jpg);
+        background-color: #A53889;
+        -webkit-text-stroke: black 0.2px;
+        color: wheat;
+
+
+        .card-body {
             border-radius: 10%;
-            background-image: url(../imagenes/alien.jpg);
-            background-color: #A53889;
-            -webkit-text-stroke: black 0.2px;
-            color: white;
+            border-color: wheat;
+            margin-top: 10px;
+            height: 275px;
+        }
 
+        .card-img-top {
+            filter: saturate(150%);
+        }
 
-
-            .card-body {
-                border-radius: 10%;
-                border-color: white;
-                margin-top: 10px;
-                height: 275px;
-            }
-
-            .card-img-top {
-                filter: saturate(150%);
-            }
-
-                .card-title {
-                    text-transform: uppercase;
-                    @include letras ($tipografiaNavbar2, 35px);
-                    -webkit-text-stroke: rgba(0, 0, 0, 0.836) 0.75px;
-                    color: white;
-                    text-align: center;
-                }
-            }
+        .card-title {
+            text-transform: uppercase;
+            @include letras ($tipografiaNavbar2, 35px);
+            -webkit-text-stroke: rgba(0, 0, 0, 0.836) 0.75px;
+            color: wheat;
+            text-align: center;
         }
     }
+}

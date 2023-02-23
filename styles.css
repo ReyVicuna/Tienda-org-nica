@@ -5,15 +5,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Julee&display=swap");
 header nav div #entrarCarrito {
   position: sticky;
-  display: flex;
-  width: 10%; }
+  display: flex; }
   header nav div #entrarCarrito p {
-    justify-content: center;
-    font-size: 28px;
+    margin-left: -15px;
+    display: flex;
+    text-align: center;
+    font-size: 24px;
     font-family: "Merriweather", serif;
-    color: #f2f2f2;
-    background-color: green;
-    border-radius: 100%; }
+    color: white;
+    border-radius: 100%;
+    width: 35px;
+    height: 35px; }
 
 aside div div table thead .tituloTabla {
   text-align: center; }
@@ -58,12 +60,14 @@ body main .offcanvas {
   color: white; }
 
 body main .btn {
-  font-size: 15px;
+  font-size: 16px;
   font-family: "Merriweather", serif;
   background-color: black;
-  color: white; }
+  color: wheat; }
 
 body footer {
+  font-size: 24px;
+  color: wheat;
   font-family: "Merriweather", serif;
   text-align: center;
   background-color: black; }
@@ -104,25 +108,22 @@ body {
   background-position: center;
   background-attachment: fixed; }
 
-header nav {
-  position: sticky; }
-  header nav .container-fluid {
-    font-family: "Caveat", cursive;
-    font-size: 42px; }
-    header nav .container-fluid .navbar-brand {
-      -webkit-text-stroke: black 0.55px;
-      text-decoration: underline;
-      text-transform: initial;
-      color: wheat;
-      font-size: 72px;
-      font-family: 'Babylonica', cursive; }
+header {
+  display: flex;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  align-items: center;
+  height: 55px;
+  background-color: rgba(0, 0, 0, 0.25); }
 
-main #contenedorProductos {
-  margin: 3px;
+#contenedorProductos {
+  margin: 5px;
   margin-block: 5px;
   border-radius: 1%;
   backdrop-filter: blur(10px);
-  background-color: rgba(0, 0, 0, 0.42);
+  background-color: rgba(0, 0, 0, 0.6);
   padding: 15px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -133,51 +134,54 @@ main #contenedorProductos {
   font-size: 24px;
   text-align: center;
   width: 100%; }
-  main #contenedorProductos .card {
+  #contenedorProductos .card {
     text-decoration: overline;
     display: flexbox;
     border-radius: 10%;
     background-image: url(../imagenes/alien.jpg);
     background-color: #A53889;
     -webkit-text-stroke: black 0.2px;
-    color: white; }
-    main #contenedorProductos .card .card-body {
+    color: wheat; }
+    #contenedorProductos .card .card-body {
       border-radius: 10%;
-      border-color: white;
+      border-color: wheat;
       margin-top: 10px;
       height: 275px; }
-    main #contenedorProductos .card .card-img-top {
+    #contenedorProductos .card .card-img-top {
       filter: saturate(150%); }
-    main #contenedorProductos .card .card-title {
+    #contenedorProductos .card .card-title {
       text-transform: uppercase;
       font-family: "Caveat", cursive;
       font-size: 35px;
       -webkit-text-stroke: rgba(0, 0, 0, 0.836) 0.75px;
-      color: white;
+      color: wheat;
       text-align: center; }
 
 main h1 {
-  border-radius: 2%;
-  margin: 3px;
   backdrop-filter: blur(10px);
-  background-color: rgba(0, 0, 0, 0.75);
+  background-color: rgba(0, 0, 0, 0.1);
   text-decoration: underline;
-  -webkit-text-stroke: white 0.2px;
+  -webkit-text-stroke: black 0.25px;
   text-transform: inherit;
-  color: wheat;
+  color: rgba(255, 255, 255, 0.98);
   text-align: center;
   font-family: "Babylonica", cursive;
   font-size: 60px; }
 
 @media only screen and (max-width: 600px) {
-  main #contenedorProductos {
-    grid-template-columns: 1fr 1fr;
-    gap: 15px;
-    padding: 20px;
-    font-size: 22px; }
-    main #contenedorProductos .card .card-body .card-title {
-      text-transform: uppercase;
-      font-size: 24px;
-      text-decoration: underline; } }
+  main {
+    display: inline-block;
+    text-align: center; }
+    main h1 {
+      margin: 40px; }
+    main #contenedorProductos {
+      grid-template-columns: 1fr 1fr;
+      gap: 15px;
+      padding: 20px;
+      font-size: 22px; }
+      main #contenedorProductos .card .card-body .card-title {
+        text-transform: uppercase;
+        font-size: 24px;
+        text-decoration: underline; } }
 
 /*# sourceMappingURL=styles.css.map */

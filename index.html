@@ -19,28 +19,27 @@
         <nav class="navbar  navbar-expand-lg w-100">
             <div class="container-fluid d-flex justify-content-center">
                 <a class="navbar-brand w-100" href="./index.html">
-                    <iconify-icon icon="game-icons:lion" style="color: green;" width="50" height="50"></iconify-icon>
-                    <em> León deJudá</em>
+                    <iconify-icon icon="game-icons:lion" style="color: wheat;" width="50" height="50"></iconify-icon>
                 </a>
                 <section id="entrarCarrito">
-                        <div class="d-flex align-items-center" id="navbarNavAltMarkup">
-                                <button type="button" class="btn btn-dark" type="button"><iconify-icon
-                                        class="align-bottom" icon="mdi:sign-in-variant" style="color: white;" width="30"
-                                        height="30"></iconify-icon></button>
-                        </div>
-                        <div class="d-flex align-items-center" id="contenedorContadorCarrito">
-                            <div id="contadorCarrito">
-                                <button type="button" class="btn btn-dark" type="button" data-bs-toggle="offcanvas"
-                                    data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><iconify-icon inline
-                                        icon="ic:twotone-shopping-cart-checkout" style="color: white;" width="30"
-                                        height="30" class="align-bottom"></iconify-icon></button>
+                    <div class="d-flex align-items-center" id="contadorCarrito">
+                        <button type="button" class="btn btn-dark" type="button"><iconify-icon class="align-bottom"
+                                icon="mdi:sign-in-variant" style="color: wheat;" width="30"
+                                height="30"></iconify-icon></button>
+                    </div>
+                    <div class="d-flex align-items-center" id="contenedorContadorCarrito">
+                        <div>
+                            <button type="button" class="btn btn-dark" type="button" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><iconify-icon inline
+                                    icon="ic:twotone-shopping-cart-checkout" style="color: wheat;" width="30"
+                                    height="30" class="align-bottom"></iconify-icon></button>
                         </div>
                 </section>
             </div>
         </nav>
     </header>
     <main>
-        <h1>" Cánnabis Organic Store "</h1>
+        <h1>" León deJudá"</h1>
         <section id="contenedorProductos"></section>
         <aside>
             <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
@@ -68,6 +67,58 @@
                     </div>
                 </div>
         </aside>
+        <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom"
+            aria-controls="offcanvasBottom">¿Tienes dudas o gustas invertir con nosotors? - Manda tu información
+        </button>
+        <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom"
+            aria-labelledby="offcanvasBottomLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasBottomLabel">Offcanvas bottom</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body small">
+                <form>
+                    <input type="text" name="" id="" required placeholder="Nombre (s) de quien solicita"
+                        class="primerFormulario">
+                    <input type="text" name="" id="" required placeholder="Apellidos" class="primerFormulario">
+                    <input type="number" name="" id="" required placeholder="Edad" class="primerFormulario">
+                    <input type="email" name="" id="" placeholder="Agrega tu email" required class="primerFormulario">
+                    <input type="submit" value="Enviar datos">
+                    <div>
+                        <h2>¿Deseas invertir activos con nosotros?</h2>
+                        <label>Paquete 1</label>
+                        <input type="radio" name="Paquete" id="">
+                        <label>Paquete 2</label>
+                        <input type="radio" name="Paquete" id="">
+                        <label>Paquete 3</label>
+                        <input type="radio" name="Paquete" id="">
+                    </div>
+                    <div>
+                        <h3>Medios de pago</h3>
+                        <label for="">Transferencia</label>
+                        <input type="checkbox" name="Transferencia" id="">
+                        <label for="">Cheques</label>
+                        <input type="checkbox" name="" id="">
+                        <label for="">Bonos</label>
+                        <input type="checkbox" name="" id="">
+                    </div>
+                    <div>
+                        <h3>Tipo de contacto</h3>
+                        <select name="Tipo de contacto" id="">
+                            <option value="Directo">Directo</option>
+                            <option value="Hibrido">Hibrido</option>
+                            <option value="OnLine">OnLine</option>
+                            <option value="Otro">Otro</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for=""></label>
+                        <input type="text" name="" id="" placeholder="Agrega tu otra opción">
+                        <input type="submit" value="Mandar información...">
+                    </div>
+                </form>
+            </div>
+        </div>
     </main>
     <footer>
         <section id="sponsorAdvertencia">
