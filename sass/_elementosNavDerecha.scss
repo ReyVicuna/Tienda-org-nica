@@ -1,0 +1,19 @@
+header {
+    nav {
+
+        div {
+            #entrarCarrito {
+                display: flex;
+
+                p {
+                    justify-content: center;
+                    font-size: 28px;
+                    font-family: $tipografiaProductos;
+                    color: #f2f2f2;
+                    background-color: olive;
+                    border-radius: 100%;
+                }
+            }
+        }
+    }
+}

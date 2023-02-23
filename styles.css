@@ -3,6 +3,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Zeyada&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Julee&display=swap");
+header nav div #entrarCarrito {
+  display: flex; }
+  header nav div #entrarCarrito p {
+    justify-content: center;
+    font-size: 28px;
+    font-family: "Merriweather", serif;
+    color: #f2f2f2;
+    background-color: olive;
+    border-radius: 100%; }
+
 aside div div table thead .tituloTabla {
   text-align: center; }
 aside div div table #carritoOffcanvas .tablaProductos {
@@ -82,7 +92,7 @@ header nav .container-fluid .collapse .navbar-nav .nav-link {
   -webkit-text-stroke: black 0.80px;
   position: sticky;
   color: white;
-  font-size: 55px;
+  font-size: 35px;
   text-align: center; }
 
 body {
@@ -96,7 +106,7 @@ header nav {
   position: sticky; }
   header nav .container-fluid {
     font-family: "Caveat", cursive;
-    font-size: 50px; }
+    font-size: 42px; }
     header nav .container-fluid .navbar-brand {
       -webkit-text-stroke: black 0.55px;
       text-decoration: underline;
@@ -134,13 +144,15 @@ main #contenedorProductos {
       border-color: white;
       margin-top: 10px;
       height: 275px; }
-      main #contenedorProductos .card .card-body .card-title {
-        text-transform: uppercase;
-        font-family: "Caveat", cursive;
-        font-size: 35px;
-        -webkit-text-stroke: rgba(0, 0, 0, 0.836) 0.75px;
-        color: white;
-        text-align: center; }
+    main #contenedorProductos .card .card-img-top {
+      filter: saturate(150%); }
+    main #contenedorProductos .card .card-title {
+      text-transform: uppercase;
+      font-family: "Caveat", cursive;
+      font-size: 35px;
+      -webkit-text-stroke: rgba(0, 0, 0, 0.836) 0.75px;
+      color: white;
+      text-align: center; }
 
 main h1 {
   border-radius: 2%;

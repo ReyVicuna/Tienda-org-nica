@@ -25,11 +25,18 @@ main {
             -webkit-text-stroke: black 0.2px;
             color: white;
 
+
+
             .card-body {
                 border-radius: 10%;
                 border-color: white;
                 margin-top: 10px;
                 height: 275px;
+            }
+
+            .card-img-top {
+                filter: saturate(150%);
+            }
 
                 .card-title {
                     text-transform: uppercase;
@@ -41,4 +48,3 @@ main {
             }
         }
     }
-}
