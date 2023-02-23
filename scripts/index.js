@@ -1,4 +1,4 @@
-//Declaraciones generales
+    //Declaraciones generales
 const contenedorProductos = document.getElementById("contenedorProductos");
 const contadorCarrito = document.getElementById("contadorCarrito");
 const carritoOffcanvas = document.getElementById("carritoOffcanvas");

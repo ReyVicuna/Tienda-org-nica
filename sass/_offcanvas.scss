@@ -1,31 +1,36 @@
-body {
-    main {
-        aside {
-            #offcanvasRight {
-                font-size: 50px;
-                font-family: $tipografiaProductos;
-                background-image: url(../imagenes/navbarImagen.jpg);
-                opacity: 0.25px;
+main {
+    #offcanvasRight {
+        backdrop-filter: sepia(90%);
+        font-size: 50px;
+        font-family: $tipografiaProductos;
+        background-image: url(../imagenes/navbarImagen.jpg);
+        opacity: 0.25px;
 
-                #precioTotalCarrito {
-                    font-family: $tipografiaNavbar2;
-                    background-color: black;
-                    color: wheat;
-                    border-radius: 10%;
-                }
+        #precioTotalCarrito {
+            font-family: $tipografiaNavbar2;
+            background-color: black;
+            color: wheat;
+            border-radius: 10%;
+        }
 
-                .offcanvas-body {
-                    font-size: 25px;
-                    
+        .offcanvas-body {
+            color: wheat;
+            font-size: 25px;
+            font-family: $tipografiaNavbar1;
+            #carritoOffcanvas {
+                .infoProducto {
+                    color: white;
+                    font-size: 22px;
+                    font-family: $tipografiaProductos;
                 }
+            }
+        }
 
-                .offcanvas-header {
-                    .offcanvas-title {
-                        color: wheat;
-                        font-size: 55px;
-                        font-family: $tipografiaNavbar1;
-                    }
-                }
+        .offcanvas-header {
+            .offcanvas-title {
+                color: wheat;
+                font-size: 55px;
+                font-family: $tipografiaNavbar1;
             }
         }
     }

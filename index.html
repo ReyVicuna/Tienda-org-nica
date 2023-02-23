@@ -29,10 +29,11 @@
                     </div>
                     <div class="d-flex align-items-center" id="contenedorContadorCarrito">
                         <div>
-                            <button type="button" class="btn btn-dark" type="button" data-bs-toggle="offcanvas"
-                                data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><iconify-icon inline
-                                    icon="ic:outline-add-shopping-cart" style="color: wheat;" width="29"
-                                    height="29"></iconify-icon></button>
+                            <button class="btn btn-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                                <iconify-icon inline icon="ic:outline-add-shopping-cart" style="color: wheat;"
+                                    width="29" height="29">
+                                </iconify-icon>
+                            </button>
                         </div>
                 </section>
             </div>
@@ -41,86 +42,68 @@
     <main>
         <h1>" León deJudá"</h1>
         <section id="contenedorProductos"></section>
-        <aside>
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
-                aria-labelledby="offcanvasRightLabel">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasDarkLabel">Carrito de compras:</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                    <table class="w-100">
-                        <thead>
-                            <tr>
-                                <th scope="col">#</th>
-                                <th scope="col">Producto</th>
-                                <th scope="col">Cantidad</th>
-                                <th scope="col">Precio</th>
-                                <th scope="col">X</th>
-                            </tr>
-                        </thead>
-                        <tbody id="carritoOffcanvas"></tbody>
-                    </table>
-                    <div class="mt-5 d-flex flex-column justify-content-center align-items-center">
-                        <p id="precioTotalCarrito">Precio Total: </p>
-                        <button id="terminarCompra" class="botonComprar">COMPRAR</button>
-                    </div>
-                </div>
-        </aside>
-        <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom"
-            aria-controls="offcanvasBottom">¿Tienes dudas o gustas invertir con nosotors? - Manda tu información
-        </button>
-        <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom"
-            aria-labelledby="offcanvasBottomLabel">
-            <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="offcanvasBottomLabel">
-                    <em>Toda la información sensible será guardada de manera segura
-                </h5></em>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header">          
+                <h5 class="offcanvas-title" id="offcanvasRightLabel">Carrito de compras:</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
-            <div class="offcanvas-body small">
-                <form>
-                    <input type="text" name="" id="" required placeholder="Nombre (s) de quien solicita"
-                        class="primerFormulario">
-                    <input type="text" name="" id="" required placeholder="Apellidos" class="primerFormulario">
-                    <input type="number" name="" id="" required placeholder="Edad" class="primerFormulario">
-                    <input type="email" name="" id="" placeholder="Agrega tu email" required class="primerFormulario">
-                    <input type="submit" value="Enviar datos">
-                    <div>
-                        <h2>¿Deseas invertir activos con nosotros?</h2>
-                        <label>Paquete 1</label>
-                        <input type="radio" name="Paquete" id="">
-                        <label>Paquete 2</label>
-                        <input type="radio" name="Paquete" id="">
-                        <label>Paquete 3</label>
-                        <input type="radio" name="Paquete" id="">
-                    </div>
-                    <div>
-                        <h3>Medios de pago</h3>
-                        <label for="">Transferencia</label>
-                        <input type="checkbox" name="Transferencia" id="">
-                        <label for="">Cheques</label>
-                        <input type="checkbox" name="" id="">
-                        <label for="">Bonos</label>
-                        <input type="checkbox" name="" id="">
-                    </div>
-                    <div>
-                        <h3>Tipo de contacto</h3>
-                        <select name="Tipo de contacto" id="">
-                            <option value="Directo">Directo</option>
-                            <option value="Hibrido">Hibrido</option>
-                            <option value="OnLine">OnLine</option>
-                            <option value="Otro">Otro</option>
-                        </select>
-                    </div>
-                    <div>
-                        <label for=""></label>
-                        <input type="text" name="" id="" placeholder="Agrega tu otra opción">
-                        <input type="submit" value="Mandar información...">
-                    </div>
-                </form>
+            <div class="offcanvas-body">
+                <table class="w-100">
+                    <thead>
+                        <tr>
+                            <th scope="col">ID</th>
+                            <th scope="col">Producto</th>
+                            <th scope="col">Q</th>
+                            <th scope="col">($)</th>
+                            <th scope="col">X</th>
+                        </tr>
+                    </thead>
+                    <tbody id="carritoOffcanvas"></tbody>
+                </table>
+                <div class="mt-5 d-flex flex-column justify-content-center align-items-center">
+                    <p id="precioTotalCarrito">Precio Total: </p>
+                    <button id="terminarCompra" class="botonComprar">COMPRAR</button>
+                </div>
             </div>
         </div>
+        <section id="formulario">
+            <h5>
+                <em>Toda la información sensible será guardada de manera segura
+                </em>
+            </h5>
+            <input type="text" name="" id="" required placeholder="Nombre (s) de quien solicita"
+                class="primerFormulario">
+            <input type="text" name="" id="" required placeholder="Apellidos" class="primerFormulario">
+            <input type="number" name="" id="" required placeholder="Edad" class="primerFormulario">
+            <input type="email" name="" id="" placeholder="Agrega tu email" required class="primerFormulario">
+            <input type="submit" value="Enviar datos">
+            <div>
+                <h3>Medios de pago</h3>
+                <label for="">Transferencia</label>
+                <input type="checkbox" name="Transferencia" id="">
+                <label for="">Cheques</label>
+                <input type="checkbox" name="" id="">
+                <label for="">Bonos</label>
+                <input type="checkbox" name="" id="">
+            </div>
+            <div>
+                <h3>Tipo de contacto</h3>
+                <select name="Tipo de contacto" id="">
+                    <option value="Directo">Directo</option>
+                    <option value="Hibrido">Hibrido</option>
+                    <option value="OnLine">OnLine</option>
+                    <option value="Otro">Otro</option>
+                </select>
+            </div>
+            <div>
+                <label for=""></label>
+                <input type="text" name="" id="" placeholder="Agrega tu otra opción">
+                <input type="submit" value="Mandar información...">
+            </div>
+            </form>
+            </div>
+            </div>
+        </section>
     </main>
     <footer>
         <section id="sponsorAdvertencia">

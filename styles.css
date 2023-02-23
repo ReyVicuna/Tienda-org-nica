@@ -3,6 +3,37 @@
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Zeyada&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Julee&display=swap");
+div div table thead .tituloTabla {
+  text-align: center; }
+div div table #carritoOffcanvas .tablaProductos {
+  height: 5rem; }
+  div div table #carritoOffcanvas .tablaProductos td {
+    width: 200px; }
+    div div table #carritoOffcanvas .tablaProductos td img {
+      width: 85%; }
+  div div table #carritoOffcanvas .tablaProductos .infoProducto {
+    -webkit-text-stroke: black 0.75px;
+    color: wheat;
+    font-size: 30px;
+    text-align: center; }
+  div div table #carritoOffcanvas .tablaProductos .eliminarProducto {
+    font-size: 22px;
+    color: red;
+    height: 10px; }
+    div div table #carritoOffcanvas .tablaProductos .eliminarProducto .deleteIconify {
+      border: 1px solid red;
+      cursor: grab; }
+div .botonComprar {
+  background-color: #a123a1;
+  padding: 0.8rem 2rem;
+  border-radius: 4px;
+  border: none;
+  width: fit-content;
+  color: white; }
+  div .botonComprar:hover {
+    font-size: 27px;
+    background-color: blueviolet; }
+
 header nav div #entrarCarrito {
   position: sticky;
   display: flex; }
@@ -17,49 +48,18 @@ header nav div #entrarCarrito {
     width: 35px;
     height: 35px; }
 
-aside div div table thead .tituloTabla {
-  text-align: center; }
-aside div div table #carritoOffcanvas .tablaProductos {
-  height: 5rem; }
-  aside div div table #carritoOffcanvas .tablaProductos td {
-    width: 200px; }
-    aside div div table #carritoOffcanvas .tablaProductos td img {
-      width: 85%; }
-  aside div div table #carritoOffcanvas .tablaProductos .infoProducto {
-    -webkit-text-stroke: black 0.75px;
-    color: wheat;
-    font-size: 30px;
-    text-align: center; }
-  aside div div table #carritoOffcanvas .tablaProductos .eliminarProducto {
-    font-size: 22px;
-    color: red;
-    height: 10px; }
-    aside div div table #carritoOffcanvas .tablaProductos .eliminarProducto .deleteIconify {
-      border: 1px solid red;
-      cursor: grab; }
-aside div .botonComprar {
-  background-color: #a123a1;
-  padding: 0.8rem 2rem;
-  border-radius: 4px;
-  border: none;
-  width: fit-content;
-  color: white; }
-  aside div .botonComprar:hover {
-    font-size: 27px;
-    background-color: blueviolet; }
-
 main aside .offcanvas .offcanvas-body {
   font-family: "Caveat", cursive;
   font-size: 30px;
   text-transform: inherit; }
 
-body main .offcanvas {
+body main #offcanvasBottom {
   font-size: 22px;
   font-family: "Merriweather", serif;
   background-image: url(../imagenes/brujo.jpg);
   color: white; }
 
-body main .btn {
+body main #formulario {
   font-size: 16px;
   font-family: "Merriweather", serif;
   background-color: black;
@@ -72,19 +72,26 @@ body footer {
   text-align: center;
   background-color: black; }
 
-body main aside #offcanvasRight {
+main #offcanvasRight {
+  backdrop-filter: sepia(90%);
   font-size: 50px;
   font-family: "Merriweather", serif;
   background-image: url(../imagenes/navbarImagen.jpg);
   opacity: 0.25px; }
-  body main aside #offcanvasRight #precioTotalCarrito {
+  main #offcanvasRight #precioTotalCarrito {
     font-family: "Caveat", cursive;
     background-color: black;
     color: wheat;
     border-radius: 10%; }
-  body main aside #offcanvasRight .offcanvas-body {
-    font-size: 25px; }
-  body main aside #offcanvasRight .offcanvas-header .offcanvas-title {
+  main #offcanvasRight .offcanvas-body {
+    color: wheat;
+    font-size: 25px;
+    font-family: "Babylonica", cursive; }
+    main #offcanvasRight .offcanvas-body #carritoOffcanvas .infoProducto {
+      color: white;
+      font-size: 22px;
+      font-family: "Merriweather", serif; }
+  main #offcanvasRight .offcanvas-header .offcanvas-title {
     color: wheat;
     font-size: 55px;
     font-family: "Babylonica", cursive; }
@@ -158,8 +165,7 @@ header {
       text-align: center; }
 
 main h1 {
-  backdrop-filter: blur(10px);
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.25);
   text-decoration: underline;
   -webkit-text-stroke: black 0.25px;
   text-transform: inherit;
