@@ -2,15 +2,17 @@ header {
     nav {
 
         div {
-            #entrarCarrito {
+            #entrarCarrito {                position: sticky;
                 display: flex;
+                width: 10%;
+        
 
                 p {
                     justify-content: center;
                     font-size: 28px;
                     font-family: $tipografiaProductos;
                     color: #f2f2f2;
-                    background-color: olive;
+                    background-color: green;
                     border-radius: 100%;
                 }
             }
