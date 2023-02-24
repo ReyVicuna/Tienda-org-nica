@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Babylonica&family=Merriweather:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,700&display=swap');
+
+body {
+  background-image: url(./cannabisMedicinal.png);
+}
+
+header {
+  -webkit-text-stroke: black 0.1px;
+  color: wheat;
+  font-size: 55px;
+  font-family: 'Babylonica', cursive;
+  height: 75PX;
+  display: flex;
+  backdrop-filter: blur (10px);
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+footer {
+  text-align: center;
+  background-color: black;
+  color: #f2f2f2;
+}
+
+main {
+  margin-bottom: 180px;
+  margin-right: auto;
+  margin-left: auto;
+  align-items: center;
+  position: relative;
+  max-width: 400px;
+}
+
+.login-card {
+  margin-top: 30px;
+  width: 300px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: WHITE;
+  -webkit-box-shadow: 2px 2px 10px #ccc;
+          box-shadow: 2px 2px 10px #ccc;
+}
+
+.card-header {
+  text-align: center;
+  margin-bottom: 20px
+}
+
+.card-header .log {
+  backdrop-filter: blur (10px);
+  font-family: 'Merriweather', serif;
+  background-color: rgba(0, 0, 0, 0.70  );
+  margin: 0;
+  font-size: 24px;
+  color: #f2f2f2;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+input[type="text"], input[type="password"] {
+  width: 100%;
+  padding: 12px 20px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+input[type="submit"] {
+  width: 100%;
+  background-color: #333;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #ccc;
+  color: black;
+}
