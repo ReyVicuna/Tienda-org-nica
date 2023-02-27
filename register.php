@@ -6,8 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="./stylesaccess.css">
 
 </head>
@@ -16,7 +15,6 @@
 
     <header>
         <nav class="d-flex">
-            <!-- Navbar content -->
             <div class="container-fluid">
                 <a class="navbar-brand" href="./index.html">León deJudá Cannabis → ¡Bienvenido!</a>
             </div>
@@ -29,27 +27,26 @@
                 <div class="text-header">Registro</div>
             </div>
             <div class="card-body">
-                <form action="#">
+                <form action="php/registro_usuario_be.php" method="POST">
                     <div class="form-group">
-                        <label for="username">Usuario:</label>
-                        <input required="" class="form-control" name="username" id="username" type="text">
+                        <label for="username">Nombre completo:</label>
+                        <input required="" class="form-control" name="nombre_completo"  id="username" type="text" placeholder="Nombre_Apellido">
                     </div>
                     <div class="form-group">
-                        <label for="email">E-mail:</label>
-                        <input required="" class="form-control" name="email" id="email" type="email">
+                        <label for="email">Correo:</label>
+                        <input required="" class="form-control" name="correo" id="email" type="email" placeholder="example@dominio.com">
                     </div>
                     <div class="form-group">
-                        <label for="password">Contraseña:</label>
-                        <input required="" class="form-control" name="password" id="password" type="password">
+                        <label for="password">Usuario:</label>
+                        <input required="" class="form-control" name="usuario" id="user" type="text">
                     </div>
                     <div class="form-group">
-                        <label for="confirm-password">Confirmar Contraseña:</label>
-                        <input required="" class="form-control" name="confirm-password" id="confirm-password"
-                            type="password">
+                        <label for="confirm-password">Contraseña:</label>
+                        <input required="" class="form-control" name="contrasena" id="password" type="password" placeholder="Tip: Siempre mira a tu alrededor">
                     </div>
-                    <input type="submit" class="btn" value="enviar">
+                    <button type="submit" class="btn btn-outline-dark btn-lg" >Submit</button>
                     <div>
-                        <a href="./login.html">¿Ya tienes una cuenta? → Da clikc aqui ← </a>
+                        <a href="./login.php">¿Ya tienes una cuenta? → Da clikc aqui ← </a>
                     </div>
                 </form>
             </div>
@@ -59,9 +56,7 @@
     <footer>
         <p><em>Todos los derechos reservados por el autor®</em></p>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
 
 </html>

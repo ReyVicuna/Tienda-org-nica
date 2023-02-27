@@ -38,7 +38,7 @@
                     <input value="Ingresar" type="submit">
                 </div>
                 <div>
-                    <a href="./register.html">¿Aún no te asocias con nosotros...? ¿¡Qué esperas ;) ¡?</a>
+                    <a href="./register.php">¿Aún no te asocias con nosotros...? ¿¡Qué esperas ;) ¡?</a>
                 </div>
             </form>
         </div>
