@@ -8,8 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Zeyada&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <title>Organic Store</title>
     <link rel="stylesheet" href="./styles.css">
 </head>
@@ -18,20 +17,15 @@
     <header class="d-flex justify-content-center">
         <nav class="navbar  navbar-expand-lg w-100">
             <div class="container-fluid d-flex justify-content-center">
-                <a class="navbar-brand w-100" href="./index.html">
-                    <iconify-icon icon="game-icons:lion" style="color: wheat;" width="50" height="50"></iconify-icon>
-                </a>
+                    <iconify-icon icon="fa6-brands:wolf-pack-battalion" style="color: purple;" width="58" height="58"></iconify-icon>
                 <section id="entrarCarrito">
                     <div class="d-flex align-items-center" id="contadorCarrito">
-                        <button type="button" class="btn btn-dark" type="button"><iconify-icon class="align-bottom"
-                                icon="mdi:sign-in-variant" style="color: wheat;" width="30"
-                                height="30"></iconify-icon></button>
+                        <button type="button" class="btn btn-dark" type="button"><iconify-icon class="align-bottom" icon="mdi:sign-in-variant" style="color: wheat;" width="26" height="28"></iconify-icon></button>
                     </div>
                     <div class="d-flex align-items-center" id="contenedorContadorCarrito">
                         <div>
                             <button class="btn btn-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
-                                <iconify-icon inline icon="ic:outline-add-shopping-cart" style="color: wheat;"
-                                    width="29" height="29">
+                                <iconify-icon inline icon="ic:outline-add-shopping-cart" style="color: wheat;" width="28" height="26">
                                 </iconify-icon>
                             </button>
                         </div>
@@ -43,7 +37,7 @@
         <h1>" León deJudá"</h1>
         <section id="contenedorProductos"></section>
         <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-            <div class="offcanvas-header">          
+            <div class="offcanvas-header">
                 <h5 class="offcanvas-title" id="offcanvasRightLabel">Carrito de compras:</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
@@ -71,8 +65,7 @@
                 <em>Toda la información sensible será guardada de manera segura
                 </em>
             </h5>
-            <input type="text" name="" id="" required placeholder="Nombre (s) de quien solicita"
-                class="primerFormulario">
+            <input type="text" name="" id="" required placeholder="Nombre (s) de quien solicita" class="primerFormulario">
             <input type="text" name="" id="" required placeholder="Apellidos" class="primerFormulario">
             <input type="number" name="" id="" required placeholder="Edad" class="primerFormulario">
             <input type="email" name="" id="" placeholder="Agrega tu email" required class="primerFormulario">
@@ -114,9 +107,7 @@
             <section>
     </footer>
     <script src="https://code.iconify.design/iconify-icon/1.0.5/iconify-icon.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     <script src="./scripts/index.js"></script>
 </body>
 

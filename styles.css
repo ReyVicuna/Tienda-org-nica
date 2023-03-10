@@ -73,6 +73,7 @@ body footer {
   background-color: black; }
 
 main #offcanvasRight {
+  background-color: black;
   backdrop-filter: sepia(90%);
   font-size: 50px;
   font-family: "Merriweather", serif;
@@ -84,7 +85,7 @@ main #offcanvasRight {
     color: wheat;
     border-radius: 10%; }
   main #offcanvasRight .offcanvas-body {
-    color: wheat;
+    color: black;
     font-size: 25px;
     font-family: "Caveat", cursive; }
     main #offcanvasRight .offcanvas-body #carritoOffcanvas .infoProducto {
@@ -92,7 +93,7 @@ main #offcanvasRight {
       font-size: 22px;
       font-family: "Merriweather", serif; }
   main #offcanvasRight .offcanvas-header .offcanvas-title {
-    color: wheat;
+    color: black;
     font-size: 55px;
     font-family: "Babylonica", cursive; }
 
@@ -146,7 +147,7 @@ header {
     display: flexbox;
     border-radius: 10%;
     background-image: url(../imagenes/alien.jpg);
-    background-color: #A53889;
+    background-color: black;
     -webkit-text-stroke: black 0.2px;
     color: wheat; }
     #contenedorProductos .card .card-body {
@@ -169,7 +170,7 @@ main h1 {
   text-decoration: underline;
   -webkit-text-stroke: black 0.25px;
   text-transform: inherit;
-  color: rgba(255, 255, 255, 0.98);
+  color: wheat;
   text-align: center;
   font-family: "Babylonica", cursive;
   font-size: 60px; }

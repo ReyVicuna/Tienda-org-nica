@@ -1,5 +1,6 @@
 main {
     #offcanvasRight {
+        background-color: black;
         backdrop-filter: sepia(90%);
         font-size: 50px;
         font-family: $tipografiaProductos;
@@ -14,7 +15,7 @@ main {
         }
 
         .offcanvas-body {
-            color: wheat;
+            color: black;
             font-size: 25px;
             font-family: $tipografiaNavbar2;
             #carritoOffcanvas {
@@ -28,7 +29,7 @@ main {
 
         .offcanvas-header {
             .offcanvas-title {
-                color: wheat;
+                color: black;
                 font-size: 55px;
                 font-family: $tipografiaNavbar1;
             }
